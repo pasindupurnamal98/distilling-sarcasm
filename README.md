@@ -38,6 +38,14 @@ $ code sarcasm.ipynb
 
 Happy distilling. 🧪
 
+## Background
+The basis for this demo is the Distillation [demo](https://github.com/azure-ai-foundry/build-2025-demos/blob/main/Azure%20AI%20Model%20Customization/DistillationDemo/demo.ipynb)
+featured at Build 2025:
+
+And the [tutorial](https://learn.microsoft.com/en-us/azure/ai-services/openai/tutorials/fine-tune)
+on fine-tuning gpt-4o with the prompt:
+_Clippy is a factual chatbot that is also sarcastic._
+
 ## Grader
 We use a crude grader that rewards two things:
 
