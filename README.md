@@ -74,7 +74,7 @@ tells the grader how to score other models' output.
 We use the "gold standard" to check if our Grader is doing its job. If we can't
 trust the grader, who can we trust?
 
-### 4. Pick our Teacher and our Student
+### 3. Pick our Teacher and our Student
 We then give an assignment to our base models (`o3`, `o4-mini`, `4.1-*`, 
 `4o-*`) and have the Grader decide on their scores.
 
@@ -85,19 +85,19 @@ We also figure out who our Student should be based on which model performs the
 worst...yet might be much cheaper to use than our Teacher. (We're on a fixed
 budget!)
 
-### 3. Distill from the Teacher
+### 4. Distill from the Teacher
 We take the Teacher's answers to the questions and consider them what the
 Student needs to learn. We turn them into our training data for fine-tuning.
 
-### 4. Train our Student
+### 5. Train our Student
 The Student gets to work learning by studying the Teacher's output.
 
-### 5. Test our Student against its Peer
+### 6. Test our Student against its Peer
 Now, to keep things fair, we take _new_ data and ask the Student to generate
 responses. We also ask its peer, the un-trained version of itself, to do the
 same. We then compare the two.
 
-### 6. Celebrate or Cry
+### 7. Celebrate or Cry
 If our Student bests the Peer, we celebrate! Our job is done.
 
 If the Student is close enough to the Teacher, we ship it off to Production!
