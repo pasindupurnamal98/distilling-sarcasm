@@ -101,3 +101,6 @@ same. We then compare the two.
 If our Student bests the Peer, we celebrate! Our job is done.
 
 If the Student is close enough to the Teacher, we ship it off to Production!
+
+
+Update to
